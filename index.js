@@ -9,7 +9,7 @@ const mailgun = require('mailgun-js')({
 
 const data = {
     from: 'postmaster@sandboxa466a01624994ab79d8e05f6a35e69a1.mailgun.org',
-    to: 'tkaur@covalienc.com',
+    to: 'tkaur@covalience.com',
     subject: 'Hello',
     text: 'Testing some Mailgun awesomeness!'
 };
