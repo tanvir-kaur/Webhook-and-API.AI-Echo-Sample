@@ -25,8 +25,8 @@ restService.use(
 restService.use(bodyParser.json());
 
 restService.post("/echo", function (req, res) {
-    var email = req.body.result && req.body.result.parameters && req.body.result.parameters.email ? req.body.result.parameters.email : "no email in response";
-    var name = req.body.result && req.body.result.parameters && req.body.result.parameters.name ? req.body.result.parameters.name : "No name in response";
+    var email = req.body.outputContexts && req.body.outputContexts.parameters && req.body.outputContexts.parameters.email ? req.body.outputContexts.parameters.email : "no email in response";
+    var name = req.body.outputContexts && req.body.outputContexts.parameters && req.body.outputContexts.parameters.given-name ? req.body.outputContexts.parameters.given-name : "No name in response";
 
     mailgun.messages().send(data, (error, body) => {
         console.log(body);
