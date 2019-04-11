@@ -32,9 +32,16 @@ restService.post("/echo", function (req, res) {
   });
 
   return res.json({
-    speech: 'test',
-    displayText: returnString,
-    source: "webhook-echo-sample"
+    "fulfillmentText":'hello'
+    ,"fulfillmentMessages":[
+        {
+            "text": {
+                "text": [
+                    "Hello I m Responding to intent"
+                ]
+            }
+        }
+    ]
   });
 });
 
