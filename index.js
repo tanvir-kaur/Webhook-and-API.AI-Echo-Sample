@@ -3,8 +3,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mailgun = require('mailgun-js')({
-  apiKey: '305c50803daa3afeacdac228cf6fe5ed-7bbbcb78-9bd5022c',
-  domain: 'sandboxa466a01624994ab79d8e05f6a35e69a1.mailgun.org'
+  apiKey: 'e4fdd5e122ae46a1e4c18041eb90690b-6140bac2-145fa2b2',
+  domain: 'sandbox8288480f566a4bba88b57b29d3c6f9ef.mailgun.org'
 });
 
 
@@ -32,7 +32,7 @@ restService.post("/echo", function (req, res) {
 
 
   const data = {
-    from: 'postmaster@sandboxa466a01624994ab79d8e05f6a35e69a1.mailgun.org',
+    from: 'postmaster@sandbox8288480f566a4bba88b57b29d3c6f9ef.mailgun.org',
     to: 'tkaur@covalience.com',
     subject: 'Hello',
     text: 'Hi, A person with name' + name + 'and email address' + email + 'is a potential lead'
